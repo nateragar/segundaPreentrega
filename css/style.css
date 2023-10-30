@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(231, 192, 253);
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: crimson;
+    text-align: center;
+    margin: 0.10rem;
+}
+
+h2 {
+    font-size: 1rem;
+    color: rgb(108, 41, 54);
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner img {
+    width: 550px;
+    border-radius: 15%;
+    margin: 10px;
+
+}
+
+.title a:hover{
+    cursor: pointer;
+    color: plum;
+    background: rgb(108, 41, 54);
+}
+
+.content {
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.content .section1, .sidebar, .news, .title, .footer{
+    background-color: plum;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.content, .title, .footer{
+    grid-column: 1/6;
+    display: flexbox;
+    align-items: center;
+}
+
+.content .section1{
+    grid-column: span 4;
+}
+
+.content .sidebar{
+    grid-column: span 1;
+}
+
+.section1 p {
+    margin: 10px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: rgb(214, 140, 214);
+    color: rgb(74, 29, 38);
+    text-align: center;
+}
+
+.section1 {
+    text-align: center;
+    width: 500px;
+}
+
+.sidebar a{
+    display: flex;
+    padding: 10px 15px;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sidebar a:hover{
+    cursor: pointer;
+    color: plum;
+    background: rgb(108, 41, 54);
+}
+
+.content .news{
+    background: plum;
+    color: rgb(108, 41, 54);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content .news:hover{
+    cursor: pointer;
+    color: plum;
+    background: rgb(108, 41, 54);
+}
+
+.galeria {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+
+}
+
+.footer{
+    text-align: center;
+}
+
+
+
+.pblog {
+    font-size: 15px;
+    color: rgb(112, 50, 63);
+    text-align: center;
+    margin: 2rem;
+    line-height: 1.5rem;
+
+}
+
+.blogimagen {
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
+
+.blogimagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-imagenes{
+    text-align: center;
+    clear: both;
+}
+
+header {
+    border-bottom: 1px black;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(74, 29, 38);
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(126, 32, 51);
+}
+
+
+input[type="text"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px rgb(126, 32, 51);
+    border-radius: 5px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.buttonform {
+    background-color: rgb(235, 173, 207);
+    color: rgb(108, 41, 54);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buttonform2 {
+    background-color: rgb(213, 128, 175);
+    color: rgb(108, 41, 54);
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+
+    body{
+        background-color: rgb(234, 164, 255);
+    }
+
+    head{
+        text-align: center;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    .content .section1{
+        grid-column: 1/-1;
+    }
+
+    .content .sidebar{
+        grid-column: 1/-1;
+    }
+
+    .content .news{
+        grid-column: 1/-1;
+    }
+
+}
