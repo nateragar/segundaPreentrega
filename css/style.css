@@ -233,6 +233,11 @@ textarea {
         background-color: rgb(234, 164, 255);
     }
 
+    .title{
+        height: auto;
+        text-align: center;
+    }
+
     head{
         text-align: center;
     }
@@ -247,6 +252,7 @@ textarea {
 
     .content .sidebar{
         grid-column: 1/-1;
+        flex-direction: column;
     }
 
     .content .news{
