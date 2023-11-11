@@ -254,7 +254,10 @@ footer{
         grid-column: 1/-1;
     }
 
-
+    h1 {
+        font-size: 18px;
+    }
+    
     .content .section1{
         grid-column: 1/-1;
         text-align: center;
